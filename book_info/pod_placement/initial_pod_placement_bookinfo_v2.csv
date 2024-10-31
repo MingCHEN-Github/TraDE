@@ -1,0 +1,9 @@
+Deployment Name,Pod Name,Host Node,IP Address
+details-v1,details-v1-5f4d584748-qxkjj,k8s-worker-8,192.168.231.237
+example-deployment,example-deployment-b8dd999c9-wlfdk,k8s-worker-6,192.168.227.149
+Unknown,loki-0,k8s-worker-5,192.168.18.194
+productpage-v1,productpage-v1-564d4686f-vm58t,k8s-worker-2,192.168.140.55
+ratings-v1,ratings-v1-686ccfb5d8-hnhzx,k8s-worker-9,192.168.251.120
+reviews-v1,reviews-v1-56c6569848-t29jd,k8s-worker-3,192.168.69.236
+reviews-v2,reviews-v2-847489d944-hnl6q,k8s-worker-7,192.168.5.39
+reviews-v3,reviews-v3-768d79f845-9gw9b,k8s-worker-6,192.168.227.145

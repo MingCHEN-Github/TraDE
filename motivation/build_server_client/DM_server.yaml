@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: server-deployment
+  namespace: client-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: server
+  template:
+    metadata:
+      labels:
+        app: server
+    spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: kubernetes.io/hostname
+                    operator: In
+                    values:
+                      - k8s-worker-2
+      containers:
+        - name: server
+          image: mingchen123/nginx_server:0.1 # use the built customized image
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              cpu: "100m" # Request 100 milliCPUs (0.1 CPU cores)
+              memory: "128Mi" # Request 128 MiB of memory
+            limits:
+              cpu: "200m" # Limit to 200 milliCPUs (0.2 CPU cores)
+              memory: "256Mi" # Limit to 256 MiB of memory
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: server-service
+  namespace: client-server
+spec:
+  selector:
+    app: server
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80

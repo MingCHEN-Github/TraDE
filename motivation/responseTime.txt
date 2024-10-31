@@ -1,0 +1,68 @@
+root@client-deployment-758f6484f7-vfg89:/load_test# ls
+2servers_payload_AverRT.py  2servers_payload_p99.py  QPS_load_test.py  bandWidth_load_test.py  output.log  output_p99.log  payload_test.py  response_times.csv
+root@client-deployment-758f6484f7-vfg89:/load_test# cat output_p99.log 
+nohup: ignoring input
+Testing at QPS: 1000
+Message Size: 256 bytes, URL1 P99: 62.17 ms, URL2 P99: 62.21 ms
+Message Size: 1024 bytes, URL1 P99: 58.39 ms, URL2 P99: 66.77 ms
+Message Size: 4096 bytes, URL1 P99: 57.18 ms, URL2 P99: 51.00 ms
+Message Size: 16384 bytes, URL1 P99: 64.86 ms, URL2 P99: 63.45 ms
+Message Size: 65536 bytes, URL1 P99: 79.06 ms, URL2 P99: 74.63 ms
+Message Size: 262144 bytes, URL1 P99: 130.16 ms, URL2 P99: 136.60 ms
+Message Size: 1048576 bytes, URL1 P99: 205.88 ms, URL2 P99: 134.80 ms
+Testing at QPS: 3000
+Message Size: 256 bytes, URL1 P99: 103.88 ms, URL2 P99: 100.83 ms
+Message Size: 1024 bytes, URL1 P99: 98.93 ms, URL2 P99: 87.31 ms
+Message Size: 4096 bytes, URL1 P99: 75.81 ms, URL2 P99: 64.09 ms
+Message Size: 16384 bytes, URL1 P99: 59.15 ms, URL2 P99: 73.27 ms
+Message Size: 65536 bytes, URL1 P99: 71.12 ms, URL2 P99: 73.57 ms
+Message Size: 262144 bytes, URL1 P99: 99.35 ms, URL2 P99: 94.70 ms
+Message Size: 1048576 bytes, URL1 P99: 94.87 ms, URL2 P99: 95.07 ms
+Testing at QPS: 5000
+Message Size: 256 bytes, URL1 P99: 55.24 ms, URL2 P99: 64.86 ms
+Message Size: 1024 bytes, URL1 P99: 70.55 ms, URL2 P99: 77.40 ms
+Message Size: 4096 bytes, URL1 P99: 94.77 ms, URL2 P99: 86.62 ms
+Message Size: 16384 bytes, URL1 P99: 102.61 ms, URL2 P99: 74.24 ms
+Message Size: 65536 bytes, URL1 P99: 102.83 ms, URL2 P99: 110.26 ms
+Message Size: 262144 bytes, URL1 P99: 105.69 ms, URL2 P99: 98.22 ms
+Message Size: 1048576 bytes, URL1 P99: 109.40 ms, URL2 P99: 104.86 ms
+Testing at QPS: 8000
+Message Size: 256 bytes, URL1 P99: 103.24 ms, URL2 P99: 81.53 ms
+Message Size: 1024 bytes, URL1 P99: 84.53 ms, URL2 P99: 89.98 ms
+Message Size: 4096 bytes, URL1 P99: 78.39 ms, URL2 P99: 75.31 ms
+Message Size: 16384 bytes, URL1 P99: 85.52 ms, URL2 P99: 89.40 ms
+Message Size: 65536 bytes, URL1 P99: 80.57 ms, URL2 P99: 90.17 ms
+Message Size: 262144 bytes, URL1 P99: 67.96 ms, URL2 P99: 81.52 ms
+Message Size: 1048576 bytes, URL1 P99: 122.27 ms, URL2 P99: 95.28 ms
+QPS: 1000
+Message Size: 256 bytes, URL1 P99 and URL2 P99 are: [62.17, 62.21]
+Message Size: 1024 bytes, URL1 P99 and URL2 P99 are: [58.39, 66.77]
+Message Size: 4096 bytes, URL1 P99 and URL2 P99 are: [57.18, 51.00]
+Message Size: 16384 bytes, URL1 P99 and URL2 P99 are: [64.86, 63.45]
+Message Size: 65536 bytes, URL1 P99 and URL2 P99 are: [79.06, 74.63]
+Message Size: 262144 bytes, URL1 P99 and URL2 P99 are: [130.16, 136.60]
+Message Size: 1048576 bytes, URL1 P99 and URL2 P99 are: [205.88, 134.80]
+QPS: 3000
+Message Size: 256 bytes, URL1 P99 and URL2 P99 are: [103.88, 100.83]
+Message Size: 1024 bytes, URL1 P99 and URL2 P99 are: [98.93, 87.31]
+Message Size: 4096 bytes, URL1 P99 and URL2 P99 are: [75.81, 64.09]
+Message Size: 16384 bytes, URL1 P99 and URL2 P99 are: [59.15, 73.27]
+Message Size: 65536 bytes, URL1 P99 and URL2 P99 are: [71.12, 73.57]
+Message Size: 262144 bytes, URL1 P99 and URL2 P99 are: [99.35, 94.70]
+Message Size: 1048576 bytes, URL1 P99 and URL2 P99 are: [94.87, 95.07]
+QPS: 5000
+Message Size: 256 bytes, URL1 P99 and URL2 P99 are: [55.24, 64.86]
+Message Size: 1024 bytes, URL1 P99 and URL2 P99 are: [70.55, 77.40]
+Message Size: 4096 bytes, URL1 P99 and URL2 P99 are: [94.77, 86.62]
+Message Size: 16384 bytes, URL1 P99 and URL2 P99 are: [102.61, 74.24]
+Message Size: 65536 bytes, URL1 P99 and URL2 P99 are: [102.83, 110.26]
+Message Size: 262144 bytes, URL1 P99 and URL2 P99 are: [105.69, 98.22]
+Message Size: 1048576 bytes, URL1 P99 and URL2 P99 are: [109.40, 104.86]
+QPS: 8000
+Message Size: 256 bytes, URL1 P99 and URL2 P99 are: [103.24, 81.53]
+Message Size: 1024 bytes, URL1 P99 and URL2 P99 are: [84.53, 89.98]
+Message Size: 4096 bytes, URL1 P99 and URL2 P99 are: [78.39, 75.31]
+Message Size: 16384 bytes, URL1 P99 and URL2 P99 are: [85.52, 89.40]
+Message Size: 65536 bytes, URL1 P99 and URL2 P99 are: [80.57, 90.17]
+Message Size: 262144 bytes, URL1 P99 and URL2 P99 are: [67.96, 81.52]
+Message Size: 1048576 bytes, URL1 P99 and URL2 P99 are: [122.27, 95.28]

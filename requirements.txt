@@ -1,0 +1,2 @@
+prometheus_api_client == 0.5.4
+kubernetes == 27.4.0

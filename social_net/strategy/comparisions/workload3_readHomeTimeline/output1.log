@@ -1,0 +1,13 @@
+nohup: ignoring input
+Running command: /home/ubuntu/DeathStarBench/wrk2/wrk -D exp -t4 -c100 -d30s -L -s /home/ubuntu/DeathStarBench/socialNetwork/wrk2/scripts/social-network/read-user-timeline.lua http://nginx-thrift.social-network.svc.cluster.local:8080/wrk2-api/user-timeline/read -R50
+Done for this command
+Running command: /home/ubuntu/DeathStarBench/wrk2/wrk -D exp -t4 -c100 -d30s -L -s /home/ubuntu/DeathStarBench/socialNetwork/wrk2/scripts/social-network/read-user-timeline.lua http://nginx-thrift.social-network2.svc.cluster.local:8080/wrk2-api/user-timeline/read -R50
+Done for this command
+Running command: /home/ubuntu/DeathStarBench/wrk2/wrk -D exp -t4 -c100 -d30s -L -s /home/ubuntu/DeathStarBench/socialNetwork/wrk2/scripts/social-network/read-user-timeline.lua http://nginx-thrift.social-network3.svc.cluster.local:8080/wrk2-api/user-timeline/read -R50
+Done for this command
+Running command: /home/ubuntu/DeathStarBench/wrk2/wrk -D exp -t4 -c100 -d30s -L -s /home/ubuntu/DeathStarBench/socialNetwork/wrk2/scripts/social-network/read-user-timeline.lua http://nginx-thrift.social-network.svc.cluster.local:8080/wrk2-api/user-timeline/read -R200
+Done for this command
+Running command: /home/ubuntu/DeathStarBench/wrk2/wrk -D exp -t4 -c100 -d30s -L -s /home/ubuntu/DeathStarBench/socialNetwork/wrk2/scripts/social-network/read-user-timeline.lua http://nginx-thrift.social-network2.svc.cluster.local:8080/wrk2-api/user-timeline/read -R200
+Done for this command
+Running command: /home/ubuntu/DeathStarBench/wrk2/wrk -D exp -t4 -c100 -d30s -L -s /home/ubuntu/DeathStarBench/socialNetwork/wrk2/scripts/social-network/read-user-timeline.lua http://nginx-thrift.social-network3.svc.cluster.local:8080/wrk2-api/user-timeline/read -R200
+Done for this command

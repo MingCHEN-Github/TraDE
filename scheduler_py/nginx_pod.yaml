@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment # change this name 
+  namespace: scheduler-py
+  labels:
+    app: nginx
+spec:
+  replicas: 3 # Specify the number of replicas
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+        name: multischeduler-example
+        schedulingStrategy: meetup
+        serviceName: annotation-second-scheduler
+    spec:
+      schedulerName: my-scheduler
+      containers:
+      - name: nginx-container
+        image: nginx:latest
+

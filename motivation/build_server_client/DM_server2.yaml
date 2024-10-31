@@ -1,0 +1,53 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: server-deployment2
+  namespace: client-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: server
+  template:
+    metadata:
+      labels:
+        app: server
+    spec:
+      tolerations:
+        - key: "node-role.kubernetes.io/control-plane"
+          operator: "Exists"
+          effect: "NoSchedule"
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: kubernetes.io/hostname
+                    operator: In
+                    values:
+                      - k8s-master
+      containers:
+        - name: server2
+          image: mingchen123/nginx_server:0.1 # use the built customized image
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              cpu: "100m" # Request 200 milliCPUs (0.2 CPU cores)
+              memory: "128Mi" # Request 200 MiB of memory
+            limits:
+              cpu: "2" # Limit to 1 CPU core
+              memory: "256Mi" # Limit to 500 MiB of memory
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: server-service2
+  namespace: client-server
+spec:
+  selector:
+    app: server
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80

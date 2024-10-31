@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: client-deployment
+  namespace: client-server
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: client
+  template:
+    metadata:
+      labels:
+        app: client
+    spec:
+      tolerations:
+        - key: "node-role.kubernetes.io/control-plane"
+          operator: "Exists"
+          effect: "NoSchedule"
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: kubernetes.io/hostname
+                    operator: In
+                    values:
+                      - k8s-master
+      containers:
+        - name: client
+          image: python:3.8-slim
+          command: ["/bin/sh", "-c"]
+          args:
+            - |
+              apt-get update && apt-get install -y gcc libatlas-base-dev
+              pip install requests matplotlib
+              sleep infinity
+          resources:
+            requests:
+              cpu: "100m" # Request 0.1 CPU core
+              memory: "128Mi" # Request 256 MiB of memory
+            limits:
+              cpu: "200m" # Limit to 0.2 CPU core
+              memory: "256Mi" # Limit to 512 MiB of memory

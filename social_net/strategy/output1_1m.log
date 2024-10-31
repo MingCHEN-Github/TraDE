@@ -1,0 +1,28 @@
+nohup: ignoring input
+Current Req is: 50 reqs/second
+Average Response Time: 653.8117910812879 ms
+Average Throughput: 35.33083333333333 requests/second
+Current Req is: 100 reqs/second
+Average Response Time: 759.9308669549827 ms
+Average Throughput: 71.53932539682539 requests/second
+Current Req is: 500 reqs/second
+Average Response Time: 437.72237331391204 ms
+Average Throughput: 82.1010101010101 requests/second
+Current Req is: 200 reqs/second
+Average Response Time: 424.5122378222977 ms
+Average Throughput: 113.47676767676766 requests/second
+Current Req is: 1000 reqs/second
+Average Response Time: 107.76203047517065 ms
+Average Throughput: 326.2296296296296 requests/second
+Current Req is: 5000 reqs/second
+Average Response Time: 142.1614623878244 ms
+Average Throughput: 393.07777777777767 requests/second
+Current Req is: 200 reqs/second
+Average Response Time: 283.8226133971054 ms
+Average Throughput: 286.2761904761905 requests/second
+Current Req is: 1000 reqs/second
+Average Response Time: 257.84567063112735 ms
+Average Throughput: 248.10634920634917 requests/second
+Current Req is: 5000 reqs/second
+Average Response Time: 173.1361839862864 ms
+Average Throughput: 447.3206349206349 requests/second

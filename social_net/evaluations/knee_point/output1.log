@@ -1,0 +1,49 @@
+nohup: ignoring input
+Running wrk for different rates:   0%|          | 0/21 [00:00<?, ?it/s]Running wrk for different rates:   5%|▍         | 1/21 [01:00<20:02, 60.12s/it]Running wrk for different rates:  10%|▉         | 2/21 [02:00<19:02, 60.11s/it]Running wrk for different rates:  14%|█▍        | 3/21 [03:00<18:01, 60.08s/it]Running wrk for different rates:  19%|█▉        | 4/21 [04:00<17:01, 60.09s/it]Running wrk for different rates:  24%|██▍       | 5/21 [05:00<16:01, 60.07s/it]Running wrk for different rates:  29%|██▊       | 6/21 [06:00<15:01, 60.07s/it]Running wrk for different rates:  33%|███▎      | 7/21 [07:00<14:01, 60.13s/it]Running wrk for different rates:  38%|███▊      | 8/21 [08:00<13:01, 60.12s/it]Running wrk for different rates:  43%|████▎     | 9/21 [09:00<12:01, 60.11s/it]Running wrk for different rates:  48%|████▊     | 10/21 [10:01<11:01, 60.11s/it]Running wrk for different rates:  52%|█████▏    | 11/21 [11:01<10:01, 60.10s/it]Running wrk for different rates:  57%|█████▋    | 12/21 [12:01<09:00, 60.10s/it]Running wrk for different rates:  62%|██████▏   | 13/21 [13:01<08:00, 60.09s/it]Running wrk for different rates:  67%|██████▋   | 14/21 [14:01<07:01, 60.19s/it]Running wrk for different rates:  71%|███████▏  | 15/21 [15:01<06:01, 60.21s/it]Running wrk for different rates:  76%|███████▌  | 16/21 [16:02<05:01, 60.33s/it]Running wrk for different rates:  81%|████████  | 17/21 [17:02<04:01, 60.27s/it]Running wrk for different rates:  86%|████████▌ | 18/21 [18:02<03:00, 60.20s/it]Running wrk for different rates:  90%|█████████ | 19/21 [19:02<02:00, 60.16s/it]Running wrk for different rates:  95%|█████████▌| 20/21 [20:02<01:00, 60.16s/it]Running wrk for different rates: 100%|██████████| 21/21 [21:03<00:00, 60.14s/it]Running wrk for different rates: 100%|██████████| 21/21 [21:03<00:00, 60.15s/it]
+Results for rate 50 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_composePost/202405040910_50_1m.txt
+Results for rate 100 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_composePost/202405040911_100_1m.txt
+Results for rate 150 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_composePost/202405040912_150_1m.txt
+Results for rate 200 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_composePost/202405040913_200_1m.txt
+Results for rate 250 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_composePost/202405040914_250_1m.txt
+Results for rate 300 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_composePost/202405040915_300_1m.txt
+Results for rate 350 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_composePost/202405040916_350_1m.txt
+Results for rate 400 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_composePost/202405040917_400_1m.txt
+Results for rate 450 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_composePost/202405040918_450_1m.txt
+Results for rate 500 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_composePost/202405040919_500_1m.txt
+Results for rate 550 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_composePost/202405040920_550_1m.txt
+Results for rate 600 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_composePost/202405040921_600_1m.txt
+Results for rate 700 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_composePost/202405040922_700_1m.txt
+Results for rate 800 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_composePost/202405040923_800_1m.txt
+Results for rate 900 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_composePost/202405040924_900_1m.txt
+Results for rate 1000 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_composePost/202405040925_1000_1m.txt
+Results for rate 1200 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_composePost/202405040926_1200_1m.txt
+Results for rate 1400 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_composePost/202405040927_1400_1m.txt
+Results for rate 1600 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_composePost/202405040928_1600_1m.txt
+Results for rate 1800 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_composePost/202405040929_1800_1m.txt
+Results for rate 2000 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_composePost/202405040930_2000_1m.txt
+Saved p99 latency plot to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_composePost/p99_latency_plot_202405040931.png
+Saved violin plot to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_composePost/violin_plot_202405040931.png
+Running wrk for different rates:   0%|          | 0/21 [00:00<?, ?it/s]Running wrk for different rates:   5%|▍         | 1/21 [01:00<20:01, 60.08s/it]Running wrk for different rates:  10%|▉         | 2/21 [02:00<19:01, 60.09s/it]Running wrk for different rates:  14%|█▍        | 3/21 [03:00<18:02, 60.15s/it]Running wrk for different rates:  19%|█▉        | 4/21 [04:00<17:02, 60.14s/it]Running wrk for different rates:  24%|██▍       | 5/21 [05:00<16:02, 60.13s/it]Running wrk for different rates:  29%|██▊       | 6/21 [06:00<15:02, 60.16s/it]Running wrk for different rates:  33%|███▎      | 7/21 [07:00<14:01, 60.13s/it]Running wrk for different rates:  38%|███▊      | 8/21 [08:01<13:02, 60.21s/it]Running wrk for different rates:  43%|████▎     | 9/21 [09:01<12:02, 60.18s/it]Running wrk for different rates:  48%|████▊     | 10/21 [10:01<11:01, 60.16s/it]Running wrk for different rates:  52%|█████▏    | 11/21 [11:01<10:01, 60.14s/it]Running wrk for different rates:  57%|█████▋    | 12/21 [12:01<09:01, 60.13s/it]Running wrk for different rates:  62%|██████▏   | 13/21 [13:01<08:00, 60.10s/it]Running wrk for different rates:  67%|██████▋   | 14/21 [14:01<07:00, 60.11s/it]Running wrk for different rates:  71%|███████▏  | 15/21 [15:02<06:00, 60.11s/it]Running wrk for different rates:  76%|███████▌  | 16/21 [16:02<05:00, 60.10s/it]Running wrk for different rates:  81%|████████  | 17/21 [17:02<04:00, 60.10s/it]Running wrk for different rates:  86%|████████▌ | 18/21 [18:02<03:00, 60.16s/it]Running wrk for different rates:  90%|█████████ | 19/21 [19:02<02:00, 60.13s/it]Running wrk for different rates:  95%|█████████▌| 20/21 [20:02<01:00, 60.13s/it]Running wrk for different rates: 100%|██████████| 21/21 [21:02<00:00, 60.14s/it]Running wrk for different rates: 100%|██████████| 21/21 [21:02<00:00, 60.13s/it]
+Results for rate 50 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_readHometime/202405040931_50_1m.txt
+Results for rate 100 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_readHometime/202405040932_100_1m.txt
+Results for rate 150 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_readHometime/202405040933_150_1m.txt
+Results for rate 200 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_readHometime/202405040934_200_1m.txt
+Results for rate 250 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_readHometime/202405040935_250_1m.txt
+Results for rate 300 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_readHometime/202405040936_300_1m.txt
+Results for rate 350 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_readHometime/202405040937_350_1m.txt
+Results for rate 400 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_readHometime/202405040938_400_1m.txt
+Results for rate 450 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_readHometime/202405040939_450_1m.txt
+Results for rate 500 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_readHometime/202405040940_500_1m.txt
+Results for rate 550 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_readHometime/202405040941_550_1m.txt
+Results for rate 600 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_readHometime/202405040942_600_1m.txt
+Results for rate 700 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_readHometime/202405040943_700_1m.txt
+Results for rate 800 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_readHometime/202405040944_800_1m.txt
+Results for rate 900 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_readHometime/202405040945_900_1m.txt
+Results for rate 1000 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_readHometime/202405040946_1000_1m.txt
+Results for rate 1200 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_readHometime/202405040947_1200_1m.txt
+Results for rate 1400 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_readHometime/202405040948_1400_1m.txt
+Results for rate 1600 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_readHometime/202405040949_1600_1m.txt
+Results for rate 1800 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_readHometime/202405040950_1800_1m.txt
+Results for rate 2000 saved to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_readHometime/202405040951_2000_1m.txt
+Saved p99 latency plot to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_readHometime/p99_latency_plot_202405040952.png
+Saved violin plot to /home/ubuntu/ms_scheduling/social_net/evaluations/knee_point/data_readHometime/violin_plot_202405040952.png

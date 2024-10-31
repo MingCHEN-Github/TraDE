@@ -1,0 +1,5 @@
+Applications,	App procssing,	Network processing
+NGINX (monolithic),	94.70%,	5.30%
+Memcached(monolithic),	80.20%,	19.80%
+MongoDB (monolithic),	86.40%,	13.60%
+Social Network (Microservice),	63.70%,	36.30%
