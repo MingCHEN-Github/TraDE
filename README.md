@@ -1,30 +1,29 @@
-# TraDE: Network and Traffic-aware AdaptiveScheduling for Microservices Under Dynamics
+# DeathStarBench
+
+Open-source benchmark suite for cloud microservices. DeathStarBench includes five end-to-end services, four for cloud systems, and one for cloud-edge systems running on drone swarms. 
+
+## End-to-end Services <img src="microservices_bundle4.png" alt="suite-icon" width="40"/>
+
+* Social Network (released)
+* Media Service (released)
+* Hotel Reservation (released)
+* E-commerce site (in progress)
+* Banking System (in progress)
+* Drone coordination system (in progress)
+
+## License & Copyright 
+
+DeathStarBench is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 2.
+
+DeathStarBench is being developed by the [SAIL group](http://sail.ece.cornell.edu/) at Cornell University. 
+
+## Publications
+
+More details on the applications and a characterization of their behavior can be found at ["An Open-Source Benchmark Suite for Microservices and Their Hardware-Software Implications for Cloud and Edge Systems"](http://www.csl.cornell.edu/~delimitrou/papers/2019.asplos.microservices.pdf), Y. Gan et al., ASPLOS 2019. 
+
+If you use this benchmark suite in your work, we ask that you please cite the paper above. 
 
 
-The transition from monolithic architecture to microservices has enhanced flexibility in application design and its scalable execution.
-This approach often involves using a computing cluster managed by
-a container orchestration platform, which supports the deployment of
-microservices. However, this shift introduces significant challenges, particularly
-in the efficient scheduling of containerized services. These challenges
-are compounded by unpredictable scenarios such as dynamic
-incoming workloads with various execution traffic and variable communication
-delays among cluster nodes. Existing works often overlook the
-real-time traffic impacts of dynamic requests on running microservices,
-as well as the varied communication delays across cluster nodes.
-Consequently, even optimally deployed microservices could suffer from
-significant performance degradation over time. To address these issues,
-we introduce a network and traffic-aware adaptive scheduling framework,
-TraDE. This framework can adaptively redeploy microservice
-containers to maintain desired performance amid changing traffic and
-network conditions within the hosting cluster. We have implemented
-TraDE as an extension to the Kubernetes platform. Additionally, we
-deployed realistic microservice applications in a real compute cluster
-and conducted extensive experiments to assess our framework’s performance
-in various scenarios. The results demonstrate the effectiveness
-of TraDE in rescheduling running microservices to enhance end-to-end
-performance while maintaining a high goodput ratio. Compared with
-the existing method NetMARKS, TraDE outperforms these methods by
-reducing the average response time of the application by up to 48.3%,
-and improving the throughput by up to 1.4x while maintaining a goodput
-ratio of 95.36% and showing robust adaptive capability under sustained
-workloads.
+## Beta-testing
+
+If you are interested in joining the beta-testing group for DeathStarBench, send us an email at: <microservices-bench-L@list.cornell.edu>
