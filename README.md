@@ -1,5 +1,8 @@
 # TraDE: Network and Traffic-aware Adaptive Scheduling for Microservices Under Dynamics
 
+![overall_TraDE](https://github.com/user-attachments/assets/29bfb9c9-f582-44ef-b238-0ec3829acf6d)
+
+
 The transition from monolithic architecture to microservices has enhanced flexibility in application design and its scalable execution. This approach often involves using a computing cluster managed by
 a container orchestration platform, which supports the deployment of microservices. However, this shift introduces significant challenges, particularly in the efficient scheduling of containerized services. These challenges
 are compounded by unpredictable scenarios such as dynamic
