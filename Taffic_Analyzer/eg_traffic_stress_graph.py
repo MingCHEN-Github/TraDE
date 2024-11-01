@@ -1,15 +1,45 @@
-'''Building traffic Stress graph, return the ms execution graph with bi-direction traffic '''
+'''An running Example of Building traffic Stress graph, return the ms execution graph with bi-direction traffic '''
 import pandas as pd
 from datetime import datetime, timedelta
+from kubernetes import client, config, stream
+import pandas as pd
+import matplotlib.pyplot as plt
+
+from prometheus_api_client import PrometheusConnect
+
+from datetime import datetime, timedelta
+from difflib import diff_bytes
+
+import seaborn as sns
+import numpy as np
+import random
+import multiprocessing as mp
+from timeit import default_timer as timer
+from datetime import datetime, timedelta
+
+# Kubernetes Config
+config.load_kube_config()
+v1 = client.CoreV1Api()
+
+# Prometheus Config
+#prom_url = "http://<PROMETHEUS_SERVER_IP>:<PORT>"
+# prom_url = "http://10.110.188.57:9090"
+prom_url = "http://10.105.116.175:9090"
+
+prom = PrometheusConnect(url=prom_url, disable_ssl=True)
+#test prom connection
+prom_connect_response = prom.custom_query(query="up")
+print(prom_connect_response)
+
 
 # Function to retrieve ready deployments
-# def get_ready_deployments(namespace):
-#     ready_deployments = []
-#     deployments = client.AppsV1Api().list_namespaced_deployment(namespace)
-#     for deployment in deployments.items:
-#         if deployment.status.ready_replicas == deployment.spec.replicas:
-#             ready_deployments.append(deployment.metadata.name)
-#     return ready_deployments
+def get_ready_deployments(namespace):
+    ready_deployments = []
+    deployments = client.AppsV1Api().list_namespaced_deployment(namespace)
+    for deployment in deployments.items:
+        if deployment.status.ready_replicas == deployment.spec.replicas:
+            ready_deployments.append(deployment.metadata.name)
+    return ready_deployments
 
 # Function to calculate transmitted requests
 def transmitted_req_calculator(workload_src, workload_dst, timerange, step_interval, app_namespace):
@@ -76,12 +106,12 @@ for deployment_src in ready_deployments:
             df_exec_graph.at[deployment_src, deployment_dst] = int(average_requests/1000) # calcuate KiloByte, instead of Byte
 
 # Plot the heatmap for exec_graph
-# plt.figure(figsize=(15, 12))
-# sns.heatmap(df_exec_graph, cmap='viridis', fmt=".2f")
-# plt.title('Average Requests per 5 Minutes among Pods')
-# plt.xlabel('Destination Pods')
-# plt.ylabel('Source Pods')
-# plt.show()
+plt.figure(figsize=(15, 12))
+sns.heatmap(df_exec_graph, cmap='viridis', fmt=".2f")
+plt.title('Average Requests per 5 Minutes among Pods')
+plt.xlabel('Destination Pods')
+plt.ylabel('Source Pods')
+plt.show()
 
 # Convert DataFrame to exec_graph (numpy array)
 exec_graph = df_exec_graph.to_numpy()
