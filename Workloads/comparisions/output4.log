@@ -1,0 +1,5 @@
+nohup: ignoring input
+Traceback (most recent call last):
+  File "/home/ubuntu/ms_scheduling/social_net/strategy/comparisions/load_homtimeline.py", line 23, in <module>
+    for i in len(urls):
+TypeError: 'int' object is not iterable

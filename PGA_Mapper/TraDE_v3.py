@@ -567,7 +567,7 @@ class TraDE_MicroserviceScheduler:
             resource_demand_cpu = [resource_demands[deployment][0] for deployment in ready_deployments]
             resource_demand_memory = [resource_demands[deployment][1] for deployment in ready_deployments]
 
-            # Define the resources you are interested in (e.g., 'cpu', 'memory', 'nvidia.com/gpu')
+            # Define the resources that the 'system' is interested (want to consider) (e.g., 'cpu', 'memory', 'nvidia.com/gpu')
             resource_list = ['cpu', 'memory', 'nvidia.com/gpu']
             
             # Get the remaining server capacities after accounting for running pods
