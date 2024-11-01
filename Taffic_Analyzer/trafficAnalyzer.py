@@ -10,7 +10,10 @@ import multiprocessing as mp
 import time
 import concurrent.futures
 
+#########Please read this part together with TraDE_v3.py for better understanding##########
 
+
+# detect if reponse time is greater than the QoS target
 def trigger_migration(self):
         """
         Determine if migration should be triggered based on QoS target and time window.
@@ -77,6 +80,8 @@ def get_ready_deployments(self):
                 ready_deployments.append(deployment.metadata.name)
         return ready_deployments
 
+
+#### using Istio service mesh 
 def transmitted_req_calculator(self, workload_src, workload_dst, timerange, step_interval):
         """
         Calculate transmitted requests between source and destination workloads.
@@ -122,6 +127,7 @@ def transmitted_req_calculator(self, workload_src, workload_dst, timerange, step
             average_traffic_KB = int(average_traffic_bytes / 1000) # covert Byte to KB
             return average_traffic_KB  
 
+###### Traffic Grapha Builder 
 def build_exec_graph(self):
         """
         Build the execution graph based on average request values between deployments.
