@@ -471,66 +471,7 @@ class TraDE_MicroserviceScheduler:
 
         return resource_demands
 
-    # def get_server_capacities(self):
-    #     """
-    #     Retrieve resource capacities (CPU, Memory) for all nodes in the cluster.
-    #     Returns:
-    #         A dictionary where keys are node names and values are tuples of (cpu_capacity, memory_capacity).
-    #     """
-    #     v1 = client.CoreV1Api()
-    #     nodes = v1.list_node()
-    #     server_capacities = {}
 
-    #     for node in nodes.items:
-    #         node_name = node.metadata.name
-    #         cpu_capacity = 0
-    #         memory_capacity = 0
-
-    #         # Convert node capacity to integer values (milliCPU for CPU, MiB for memory)
-    #         if 'cpu' in node.status.capacity:
-    #             cpu_capacity = int(node.status.capacity['cpu'].replace('m', ''))  # Convert to milliCPU
-    #         if 'memory' in node.status.capacity:
-    #             memory_capacity = int(node.status.capacity['memory'].replace('Ki', '')) // 1024  # Convert Ki to MiB
-
-    #         server_capacities[node_name] = (cpu_capacity, memory_capacity)
-
-    #     return server_capacities
-    # def get_server_capacities(self, resource_list):
-    #     """
-    #     Retrieve resource capacities for all nodes in the cluster based on the provided resource list.
-        
-    #     Args:
-    #         resource_list: List of resources to retrieve from the nodes (e.g., ['cpu', 'memory', 'nvidia.com/gpu']).
-        
-    #     Returns:
-    #         A dictionary where keys are node names and values are dictionaries of requested resources and their capacities.
-    #     """
-    #     v1 = client.CoreV1Api()
-    #     nodes = v1.list_node()
-    #     server_capacities = {}
-
-    #     for node in nodes.items:
-    #         node_name = node.metadata.name
-    #         server_capacities[node_name] = {}
-
-    #         # Iterate over the user-defined resource list
-    #         for resource in resource_list:
-    #             # Check if the resource exists in node capacity and retrieve it
-    #             if resource in node.status.capacity:
-    #                 resource_capacity = node.status.capacity[resource]
-    #                 if resource == 'cpu':
-    #                     # Convert CPU to milliCPU (if needed)
-    #                     server_capacities[node_name][resource] = int(resource_capacity.replace('m', ''))  # Assume milliCPU
-    #                 elif resource == 'memory':
-    #                     # Convert memory from Ki to Mi
-    #                     server_capacities[node_name][resource] = int(resource_capacity.replace('Ki', '')) // 1024
-    #                 else:
-    #                     # Other resources like GPU can be left as-is
-    #                     server_capacities[node_name][resource] = resource_capacity
-    #             else:
-    #                 server_capacities[node_name][resource] = 'Not available'
-
-    #     return server_capacities
     def get_server_capacities(self, resource_list):
         """
         Retrieve remaining (available) resource capacities for all nodes in the cluster based on the provided resource list.
@@ -602,67 +543,6 @@ class TraDE_MicroserviceScheduler:
 
 
 
-    
-    # def run(self):
-    #     """
-    #     Main function to run the scheduler.
-    #     """
-    #     print("Running the scheduler...:", datetime.now())
-        
-    #     # Trigger migration if needed
-    #     if self.trigger_migration():
-    #         # Build the execution graph
-    #         exec_graph, ready_deployments = self.build_exec_graph()
-
-    #         # Get the initial deployment node mapping
-    #         deployment_node_dict = self.get_deployment_node_dict(ready_deployments)
-    #         # print("Deployment Node Mapping:", deployment_node_dict)
-    #         initial_placement = self.get_worker_node_numbers(deployment_node_dict)
-
-    #         # Measure node-to-node latency
-    #         delay_matrix = self.measure_http_latency()
-
-    #         # Get the real resource demands from the deployments
-    #         resource_demands = self.get_deployment_resource_demands(ready_deployments)
-            
-    #         # Aggregate resource demands into arrays for CPU and memory
-    #         resource_demand_cpu = [resource_demands[deployment][0] for deployment in ready_deployments]
-    #         resource_demand_memory = [resource_demands[deployment][1] for deployment in ready_deployments]
-
-    #         # Get remiang server capacities (by detucting the resource requests values from other microservices ) from the nodes
-            
-    #         server_capacities = self.get_server_capacities(['cpu', 'memory']) # eg..['cpu', 'memory', 'nvidia.com/gpu']
-    #         # print("Server Capacities:", server_capacities)
-
-    #         # Map the node names in deployment_node_dict to actual server capacities
-    #         server_cpu_capacity = [server_capacities[node]['cpu'] for node in deployment_node_dict.values()] # 
-    #         server_memory_capacity = [server_capacities[node]['memory'] for node in deployment_node_dict.values()]
-
-    #         # Calculate the initial communication cost (using CPU for simplicity)
-    #         initial_cost = self.calculate_communication_cost(exec_graph, initial_placement, delay_matrix, resource_demand_cpu, server_cpu_capacity)
-    #         print("Initial Placement:", initial_placement)
-    #         print("Initial Communication Cost:", initial_cost)
-
-    #         # Perform parallel greedy placement
-    #         final_placement, total_cost = self.parallel_greedy_placement(
-    #             exec_graph, delay_matrix, initial_placement, len(delay_matrix), resource_demand_cpu, server_cpu_capacity, num_workers=mp.cpu_count()
-    #         )
-    #         print("Final Placement:", final_placement)
-    #         print("Total Communication Cost:", total_cost)
-
-    #         # Determine required migrations
-    #         migrations = self.migrate_microservices(initial_placement, final_placement)
-    #         filtered_migrations = self.exclude_non_App_ms(migrations, ready_deployments, exclude_deployments=['jaeger'])
-    #         print("All Migrations needed:", filtered_migrations)
-    #         print("Migrations needed:")
-    #         for microservice, initial, final in filtered_migrations:
-    #             print(f"Microservice {microservice} from Node {initial} to Node {final}")
-    #             print(f"Microservice {ready_deployments[microservice]} from Node {initial + 1} to Node {final + 1}")
-    #             if self.patch_deployment(ready_deployments[microservice], new_node_name='k8s-worker-' + str(final + 1)):
-    #                 self.wait_for_rolling_update_to_complete(ready_deployments[microservice], new_node_name='k8s-worker-' + str(final + 1))
-    #                 print(f"Microservice {ready_deployments[microservice]} migrated successfully.")
-    #     else:
-    #         print("No migration needed.")
 
     def run(self):
         """
