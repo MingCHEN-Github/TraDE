@@ -1,23 +1,0 @@
-nohup: ignoring input
-Running wrk for different rates:   0%|          | 0/19 [00:00<?, ?it/s]Running wrk for different rates:   5%|▌         | 1/19 [05:00<1:30:04, 300.26s/it]Running wrk for different rates:  11%|█         | 2/19 [10:00<1:25:04, 300.25s/it]Running wrk for different rates:  16%|█▌        | 3/19 [15:00<1:20:03, 300.21s/it]Running wrk for different rates:  21%|██        | 4/19 [20:00<1:15:03, 300.20s/it]Running wrk for different rates:  26%|██▋       | 5/19 [25:01<1:10:02, 300.19s/it]Running wrk for different rates:  32%|███▏      | 6/19 [30:01<1:05:02, 300.19s/it]Running wrk for different rates:  37%|███▋      | 7/19 [35:01<1:00:02, 300.18s/it]Running wrk for different rates:  42%|████▏     | 8/19 [40:01<55:02, 300.19s/it]  Running wrk for different rates:  47%|████▋     | 9/19 [45:01<50:01, 300.19s/it]Running wrk for different rates:  53%|█████▎    | 10/19 [50:01<45:01, 300.18s/it]Running wrk for different rates:  58%|█████▊    | 11/19 [55:02<40:01, 300.18s/it]Running wrk for different rates:  63%|██████▎   | 12/19 [1:00:02<35:01, 300.18s/it]Running wrk for different rates:  68%|██████▊   | 13/19 [1:05:02<30:01, 300.18s/it]Running wrk for different rates:  74%|███████▎  | 14/19 [1:10:02<25:00, 300.17s/it]Running wrk for different rates:  79%|███████▉  | 15/19 [1:15:02<20:00, 300.18s/it]Running wrk for different rates:  84%|████████▍ | 16/19 [1:20:02<15:00, 300.17s/it]Running wrk for different rates:  89%|████████▉ | 17/19 [1:25:03<10:00, 300.17s/it]Running wrk for different rates:  95%|█████████▍| 18/19 [1:30:03<05:00, 300.18s/it]Running wrk for different rates: 100%|██████████| 19/19 [1:35:03<00:00, 300.18s/it]Running wrk for different rates: 100%|██████████| 19/19 [1:35:03<00:00, 300.19s/it]
-Results for rate 50 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/202404260030_50_5m.txt
-Results for rate 100 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/202404260035_100_5m.txt
-Results for rate 150 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/202404260040_150_5m.txt
-Results for rate 200 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/202404260045_200_5m.txt
-Results for rate 250 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/202404260050_250_5m.txt
-Results for rate 300 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/202404260055_300_5m.txt
-Results for rate 350 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/202404260100_350_5m.txt
-Results for rate 400 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/202404260105_400_5m.txt
-Results for rate 500 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/202404260110_500_5m.txt
-Results for rate 600 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/202404260115_600_5m.txt
-Results for rate 700 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/202404260120_700_5m.txt
-Results for rate 800 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/202404260125_800_5m.txt
-Results for rate 900 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/202404260130_900_5m.txt
-Results for rate 1000 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/202404260135_1000_5m.txt
-Results for rate 1200 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/202404260140_1200_5m.txt
-Results for rate 1400 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/202404260145_1400_5m.txt
-Results for rate 1600 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/202404260150_1600_5m.txt
-Results for rate 1800 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/202404260155_1800_5m.txt
-Results for rate 2000 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/202404260200_2000_5m.txt
-Saved p99 latency plot to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/p99_latency_plot_202404260205.png
-Saved violin plot to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/violin_plot_202404260205.png

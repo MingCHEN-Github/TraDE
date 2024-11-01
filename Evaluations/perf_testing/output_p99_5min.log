@@ -1,2 +1,0 @@
-nohup: ignoring input
-nohup: failed to run command 'wrk_p99_latency.py': No such file or directory

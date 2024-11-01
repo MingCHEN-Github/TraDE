@@ -1,24 +1,0 @@
-nohup: ignoring input
-Running wrk for different rates:   0%|          | 0/20 [00:00<?, ?it/s]Running wrk for different rates:   5%|▌         | 1/20 [02:00<38:01, 120.08s/it]Running wrk for different rates:  10%|█         | 2/20 [04:00<36:01, 120.09s/it]Running wrk for different rates:  15%|█▌        | 3/20 [06:00<34:01, 120.07s/it]Running wrk for different rates:  20%|██        | 4/20 [08:00<32:00, 120.06s/it]Running wrk for different rates:  25%|██▌       | 5/20 [10:00<30:00, 120.06s/it]Running wrk for different rates:  30%|███       | 6/20 [12:00<28:00, 120.06s/it]Running wrk for different rates:  35%|███▌      | 7/20 [14:00<26:00, 120.06s/it]Running wrk for different rates:  40%|████      | 8/20 [16:00<24:00, 120.05s/it]Running wrk for different rates:  45%|████▌     | 9/20 [18:00<22:00, 120.05s/it]Running wrk for different rates:  50%|█████     | 10/20 [20:00<20:00, 120.06s/it]Running wrk for different rates:  55%|█████▌    | 11/20 [22:00<18:00, 120.05s/it]Running wrk for different rates:  60%|██████    | 12/20 [24:00<16:00, 120.05s/it]Running wrk for different rates:  65%|██████▌   | 13/20 [26:00<14:00, 120.04s/it]Running wrk for different rates:  70%|███████   | 14/20 [28:00<12:00, 120.04s/it]Running wrk for different rates:  75%|███████▌  | 15/20 [30:00<10:00, 120.04s/it]Running wrk for different rates:  80%|████████  | 16/20 [32:00<08:00, 120.04s/it]Running wrk for different rates:  85%|████████▌ | 17/20 [34:00<06:00, 120.06s/it]Running wrk for different rates:  90%|█████████ | 18/20 [36:00<04:00, 120.06s/it]Running wrk for different rates:  95%|█████████▌| 19/20 [38:01<02:00, 120.05s/it]Running wrk for different rates: 100%|██████████| 20/20 [40:01<00:00, 120.05s/it]Running wrk for different rates: 100%|██████████| 20/20 [40:01<00:00, 120.05s/it]
-Results for rate 50 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/composePost/202404261517_50_2m.txt
-Results for rate 250 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/composePost/202404261519_250_2m.txt
-Results for rate 450 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/composePost/202404261521_450_2m.txt
-Results for rate 650 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/composePost/202404261523_650_2m.txt
-Results for rate 850 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/composePost/202404261525_850_2m.txt
-Results for rate 1050 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/composePost/202404261527_1050_2m.txt
-Results for rate 1250 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/composePost/202404261529_1250_2m.txt
-Results for rate 1450 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/composePost/202404261531_1450_2m.txt
-Results for rate 1650 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/composePost/202404261533_1650_2m.txt
-Results for rate 1850 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/composePost/202404261535_1850_2m.txt
-Results for rate 2050 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/composePost/202404261537_2050_2m.txt
-Results for rate 2250 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/composePost/202404261539_2250_2m.txt
-Results for rate 2450 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/composePost/202404261541_2450_2m.txt
-Results for rate 2650 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/composePost/202404261543_2650_2m.txt
-Results for rate 2850 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/composePost/202404261545_2850_2m.txt
-Results for rate 3050 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/composePost/202404261547_3050_2m.txt
-Results for rate 3250 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/composePost/202404261549_3250_2m.txt
-Results for rate 3450 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/composePost/202404261551_3450_2m.txt
-Results for rate 3650 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/composePost/202404261553_3650_2m.txt
-Results for rate 3850 saved to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/composePost/202404261555_3850_2m.txt
-Saved p99 latency plot to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/composePost/p99_latency_plot_202404261557.png
-Saved violin plot to /home/ubuntu/ms_scheduling/social_net/perf_testing/data/composePost/violin_plot_202404261557.png
