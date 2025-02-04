@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: server-deployment
-  namespace: client-server
+  # namespace: client-server
 spec:
   replicas: 1
   selector:
@@ -39,7 +39,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: server-service
-  namespace: client-server
+  # namespace: client-server
 spec:
   selector:
     app: server
